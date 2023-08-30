@@ -6,6 +6,10 @@
   outline: none;
 }
 
+.ProseMirror {
+  height: inherit;
+}
+
 .tiptap p.is-editor-empty:first-child::before {
   color: #adb5bd;
   content: attr(data-placeholder);

@@ -210,11 +210,13 @@ export function TipTap({
           </Button>
         </div>
       </div>
-      <div className="px-2 py-4">
+
+      <div className="px-2 py-4 grid min-h-[150px]">
         <EditorContent
-          editor={editor!}
+          editor={editor}
           className="rounded border border-zinc-300 py-2 px-4"
         />
+
         {limitCharacters && (
           <div className="text-zinc-500 text-xs pt-2">
             {editor.storage.characterCount.characters()}/{limitCharacters}{" "}
